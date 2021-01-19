@@ -1,0 +1,16 @@
+{
+  "name": "discourse-peacock-theme",
+  "about_url": "",
+  "license_url": "https://github.com/MeghnaAJ/discourse-peacock-theme/blob/master/LICENSE",
+  "authors": "Meghna",
+  "assets": { },
+  "color_schemes": {
+    "peacock": {
+      "primary": "222222",
+      "secondary": "ffffff",
+      "tertiary": "B0986C",
+      "quaternary": "002D62"
+    }
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}

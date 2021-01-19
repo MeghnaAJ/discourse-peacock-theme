@@ -1,0 +1,21 @@
+@import "variables";
+
+// Topic List
+.list-controls {
+  .nav-pills {
+    >li {
+      border-radius: $radius-4;
+      border: 0;
+      background-color: $color-mud;
+    }
+    .drop {
+      border-radius: $radius-4;
+      border: 1px solid $color-gold; 
+    }
+  }
+}
+
+// Topic Page
+.topic-body, .topic-avatar {
+  border-top: 0
+}

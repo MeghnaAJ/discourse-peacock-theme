@@ -1,0 +1,239 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7Eyjmmd8WD07oB-.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+$base-font-family: 'Rubik', sans-serif;
+
+html {
+  font-family: $base-font-family;
+  color: $color-black;
+  background: $color-white;
+}
+
+body {
+  background: $color-yellow-green;
+}
+
+// Header
+// *------------------------------------------------*
+.d-header {
+  height: 5em;
+  background-size: cover;
+  background: $header-gradient;
+  .d-header-icons {
+    .d-icon {
+      color: $color-black;
+      font-size: 22px;
+    }    
+  }
+}
+
+.menu-panel {
+  li a.widget-link:hover, li a.widget-link:focus {
+    background-color: $color-mud;
+  }
+  .panel-body-bottom .btn:hover {
+    background: $color-gold;
+  }
+  li a.widget-link .d-icon, .menu-panel li a.categories-link .d-icon {
+    color: $color-gold;
+  }
+}
+
+div.menu-links-header .menu-links-row li a.active .d-icon {
+  color: $color-gold-copper;
+}
+
+// New Topic Button
+// *------------------------------------------------*
+#create-topic {
+  color: $color-white;
+  background-color: $color-gold-copper;
+  border-radius: $layout-border-radius;
+  .fa {
+    color: $color-white;
+  }
+  &:hover {
+    background: $color-navy;
+    color: $color-white;
+    border-radius: $layout-border-radius;
+    .fa {
+      color: $color-white;
+    }
+  }
+}
+
+// Topic List
+// *------------------------------------------------*
+table {
+  tbody {
+    background: $color-white;
+    border-top: 3px solid $color-gold-copper;
+    tr {
+      border-bottom: 1px solid $color-mud;
+    }
+  }
+}
+
+// Topic Page
+// *------------------------------------------------*
+.topic-body, .topic-avatar {
+  border-top: 3px solid $color-gold-copper;
+}
+
+.topic-meta-data .post-info a {
+  color: $color-gold;
+}
+
+.timeline-container .topic-timeline { 
+  .timeline-scrollarea {
+    border-color: $color-mud;
+  }
+  .timeline-handle {
+    background-color: $color-mud;
+  }
+}
+
+// Navigation Bar
+// *------------------------------------------------*
+.nav-pills li a {  
+  &.active {
+    font-weight: 500;
+    border-bottom: 2px solid $color-navy;
+    border-radius: $radius-2;
+    background-color: $color-yellow-green;
+    color: $color-navy;
+  }
+  &:hover {
+    border-radius: $radius-2;
+    background-color: $color-navy;
+    color: $color-white;
+  }
+}
+
+.list-controls .combo-box .combo-box-header {
+  border: 0;
+  background-color: $color-mud;
+  border-radius: $radius-2;
+  font-weight: 400;
+}
+
+// Buttons
+// *------------------------------------------------*
+.btn {
+  border-radius: $radius-4;
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+      color: $color-white;
+      background: $color-navy;
+      .d-icon {
+        color: $color-white;
+      }
+    }
+  }
+  &:hover, 
+  &.btn-hover {
+    color: $color-white;
+    background: $color-navy;
+    .d-icon {
+      color: $color-white;
+    }
+  }
+  &:active, 
+  &.btn-active {
+    background-image: none;
+    background-color: $color-gold-copper;
+    color: $color-white;
+    .d-icon {
+      color: $color-white;
+    }
+  } 
+}
+
+.btn-icon, .btn-text, .btn-default, .btn-large {
+  background-color: $color-mud;
+  color: $color-navy;
+  .d-icon {
+    color: $color-gold-copper;
+  }
+}
+
+.btn-primary {
+  background-color: $color-navy;
+  color: $color-mud;
+  .d-icon {
+    color: $color-mud;
+  }
+  &:hover, &.btn-hover {
+    color: $color-black;
+    background: $color-navy;
+    .d-icon {
+      color: $color-black;
+    }
+  }
+}
+
+.btn-danger {
+  background-color: $danger;
+  color: $color-white;
+  .d-icon {
+    color: $color-white;
+  }
+  &:active, 
+  &.btn-active {
+    .d-icon {
+      color: $color-white;
+    }
+  } 
+
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+      color: $color-mud;
+      .d-icon {
+        color: $color-mud;
+      }
+    }
+  }
+}
+
+.btn-flat {
+  .d-icon {
+    color: $color-tapa;
+  }
+}
+
+// Advanced Search
+// *------------------------------------------------*
+.search-container .search-advanced-sidebar {
+ .search-advanced-title {
+    background: $color-brown;
+  }
+  .search-advanced-filters {
+    background: $color-yellow-green; 
+    border: 1px solid $color-mud;// colour post
+ }
+}
+
+// Others
+// *------------------------------------------------*
+.discourse-no-touch .sortable:hover {
+  background-color: $color-mud;
+}
+
+// Admin
+// *------------------------------------------------*
+.admin-controls {
+  .nav-pills>li a.active {
+    background: none;
+    color: $quaternary;
+  }
+}

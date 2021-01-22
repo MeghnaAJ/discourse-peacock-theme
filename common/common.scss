@@ -29,9 +29,12 @@ body {
   background: $header-gradient;
   .d-header-icons {
     .d-icon {
-      color: $color-black;
+      color: $color-white;
       font-size: 22px;
-    }    
+    }
+  }
+  .extra-info-wrapper .topic-link {
+    color: $color-white;
   }
 }
 

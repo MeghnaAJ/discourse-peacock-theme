@@ -33,8 +33,14 @@ body {
       font-size: 22px;
     }
   }
-  .extra-info-wrapper .topic-link {
-    color: $color-white;
+  .extra-info-wrapper {
+    .topic-link {
+      color: $color-white;
+    }
+    .categories-wrapper .badge-wrapper .badge-category .category-name,
+    .topic-header-extra .discourse-tags .discourse-tag {
+      color: $color-brown;
+    }
   }
 }
 
@@ -102,10 +108,6 @@ table {
   .timeline-handle {
     background-color: $color-mud;
   }
-}
-
-.badge-wrapper .badge-category .category-name {
-  color: $color-brown;
 }
 
 // Navigation Bar
